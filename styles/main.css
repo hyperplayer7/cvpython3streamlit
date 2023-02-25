@@ -17,6 +17,11 @@ a:hover {
 
 ul {
   /* list-style-type: none; */
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
 }
 
 hr {

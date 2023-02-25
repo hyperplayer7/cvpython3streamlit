@@ -42,5 +42,5 @@
 - https://www.labnol.org/embed/google/drive/
 
 ### Next Iteration
-- Make a json API containing data
-- Make app read data from the API
+- Make a json API containing data - DONE
+- Make app read data from the API - DONE
