@@ -38,6 +38,8 @@
 - https://www.youtube.com/watch?v=4SO3CUWPYf0
 - https://www.youtube.com/watch?v=BXAeMICmUSQ
 - https://github.com/Ileriayo/markdown-badges
+- https://emojipedia.org/
+- https://www.labnol.org/embed/google/drive/
 
 ### Next Iteration
 - Make a json API containing data

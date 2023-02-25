@@ -4,28 +4,27 @@ import streamlit as st
 from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+# resume_file = current_dir / "assets" / "CV.pdf"
+# profile_pic = current_dir / "assets" / "profile-pic.png"
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV"
+PAGE_TITLE = "Bryan Chan - Digital CV using Python & Streamlit"
 PAGE_ICON = ":wave:"
-NAME = "John Doe"
+NAME = "Bryan Chan"
 DESCRIPTION = """
-Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+I am an experienced Ruby on Rails developer with a deep understanding of the language and framework. I have a passion for creating scalable, maintainable, and high-performance web applications while staying up-to-date with the latest technologies and industry trends.
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "bryancarlsonchan@gmail.com"
 SOCIAL_MEDIA = {
-    "Youtube" : "",
-    "LinkedIn": "https://linkedin.com",
-    "Github": "",
-    "Twitter": ""
+    "LinkedIn": "https://www.linkedin.com/in/bryancarlsonchan/",
+    "Github": "https://github.com/hyperplayer7",
+    "Dev.to": "https://dev.to/hyperplayer7",
+    "Hashnode" : "https://shoshin.hashnode.dev/"
 }
 
 PROJECTS = {
-"Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb@A9i6d320",
-"Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-"Desktop Application - Excel2Csv converter with user settings & menubar": "https://youtu.be/LzCfNanQ"
+"🏆 Build A Digital Resume Using Python & Streamlit": "https://github.com/hyperplayer7/cvpython3streamlit",
+"🏆 How to Deploy a Node.js App to Render.com for Free": "https://github.com/hyperplayer7/dfdgdfgdfgd"
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -38,26 +37,20 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 # with open(resume_file, "rb") as pdf_file:
 #     PDFbyte = pdf_file.read()
-profile_pic = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjx-by4e5r6kDq59HyeRElGTd00oMFr-duASxN8UKnsQ&s"#Image.open(profile_pic)
-url = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+profile_pic = "https://lh4.googleusercontent.com/2D9WP_InDxPQg2li0iVSfWt-SsvA2ADxQvbrbG4oBvv18WDnIZiXtM2NLcp3-hDmNpI=w2400"#Image.open(profile_pic)
+# url = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
 
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=230)
+    # st.image(profile_pic, width=230)
+    st.image(profile_pic)
 
 with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
-    # st.download_button(
-    #     label=" Download Resume",
-    #     data=PDFbyte,
-    #     file_name = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    #     mime = "application/octet-stream"
-    # )
-    st.markdown(f"[Download Resume]({url})")
-    st.write("@", EMAIL)
+    st.write("📬", EMAIL)
 
 # --- SOCIAL LINKS ---
 
@@ -76,10 +69,14 @@ st.subheader("Experience & Qulifications")
 
 st.write(
 """
-- 7 Years expereince extracting actionable insights from data
-- Strong hands on experience and knowledge in Python and Excel
-- Good understanding of statistical principles and their respective applications
-- Excellent team-player and displaying strong sense of initiative on tasks
+✅ Working as a Software Engineer. Using Rails for making web applications and JSON APIs for building SaaS platforms. Following Ruby best practices and methodologies and also using the latest JS technologies available. Following Agile methodologies to maintain robust development.
+
+✅ Managed my own team composed of web developers, graphic designers, and an SEO analyst.
+
+✅ Providing expertise in SaaS development, contributes to the improvement of existing Ruby on Rails application by using Test Driven Development practices and latest Javascript frameworks.
+
+✅ Experience working with a distributed and fully remote team of experienced developers, QA, and supporting teams in a competitive SaaS company. Demonstrated history of working in the computer software industry with a strong history as a Software Engineer skilled in Ruby on Rails, Software Development, Continuous Integration, Scrum, and Object-Oriented Programming (OOP).
+
 """
 )
 
@@ -91,9 +88,21 @@ st.subheader("Hard Skills")
 
 st.write(
 """
-- Programming: Python (Scikit-learn, Pandas), SQL, VBA
-- Data Visulization: PowerBi, MS Excel, Plotly
-- Modeling: Logistic regression, linear regression, decition trees
+- Web Development
+- Ruby
+- Ruby on Rails
+- Mysql
+- Postgres
+- Git
+- Jquery
+- HTML
+- CSS
+- Javascript
+- JSON
+- API
+- Rspec
+- Python
+- Node.js
 """
 )
 
@@ -103,41 +112,80 @@ st.subheader("Work History")
 st.write("---")
 
 #--- JOB1
-st.write("X", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+st.write("💻", "**Ruby on Rails Developer | LaunchPad Recruits / Outmatch / Harver**")
+st.write("07/2013 - Present")
 
 st.write(
 """
-- > Used PowerBI and SQL to redefine and track KPIs surrounding marketing initiatives,
-and supplied recommendations to boost landing page conversion rate by 38%
-- > Lorem Ipsum
-- > Lorem Ipsum
+- > Developing and maintaining web applications using the Ruby on Rails framework
+- > Designing, coding, and testing software applications
+- > Creating and maintaining databases and database structures
+- > Developing and implementing software algorithms and data structures
+- > Debugging and fixing software defects and issues
+- > Collaborating with other developers and designers to deliver high-quality software solutions
+- > Participating in code reviews and providing feedback to other developers
+- > Staying up-to-date with the latest technologies and trends in web development
+- > Providing technical support to end-users and resolving technical issues
+- > Planning and executing software development projects
+- > Writing clean, efficient, and well-organized code that follows industry best practices
+- > Optimizing application performance and scalability
+- > Participating in Agile software development methodologies such as Scrum
+
 """
 )
 
-#--- JOB1
-st.write("X", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+#--- JOB2
+st.write("💻", "**Ruby on Rails Developer | Ripplewave**")
+st.write("09/2012 - 06/2013")
 
 st.write(
 """
-- > Used PowerBI and SQL to redefine and track KPIs surrounding marketing initiatives,
-and supplied recommendations to boost landing page conversion rate by 38%
-- > Lorem Ipsum
-- > Lorem Ipsum
+- > Developing and maintaining web applications using the Ruby on Rails framework
+- > Designing, coding, and testing software applications
+- > Creating and maintaining databases and database structures
+- > Developing and implementing software algorithms and data structures
+- > Debugging and fixing software defects and issues
+- > Collaborating with other developers, designers, and clients to deliver high-quality software solutions
+- > Providing technical support to end-users and resolving technical issues
+- > Planning and executing software development projects
+
 """
 )
 
-#--- JOB1
-st.write("X", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+#--- JOB3
+st.write("💻", "**Ruby on Rails Developer | Rivereo / Magenic**")
+st.write("01/2011 - 11/2012")
 
 st.write(
 """
-- > Used PowerBI and SQL to redefine and track KPIs surrounding marketing initiatives,
-and supplied recommendations to boost landing page conversion rate by 38%
-- > Lorem Ipsum
-- > Lorem Ipsum
+- > Developing and maintaining web applications using the Ruby on Rails framework
+- > Designing, coding, and testing software applications
+- > Creating and maintaining databases and database structures
+- > Developing and implementing software algorithms and data structures
+- > Debugging and fixing software defects and issues
+- > Collaborating with other developers, designers, and clients to deliver high-quality software solutions
+- > Providing technical support to end-users and resolving technical issues
+- > Planning and executing software development projects
+- > Participating in Agile software development methodologies such as Scrum
+
+"""
+)
+
+#--- JOB4
+st.write("💻", "**Ruby on Rails Developer | Brewed Concepts**")
+st.write("10/2007 - 01/2011")
+
+st.write(
+"""
+- > Developing and maintaining web applications using the Ruby on Rails framework
+- > Designing, coding, and testing software applications
+- > Creating and maintaining databases and database structures
+- > Developing and implementing software algorithms and data structures
+- > Debugging and fixing software defects and issues
+- > Collaborating with other developers, designers, and clients to deliver high-quality software solutions
+- > Providing technical support to end-users and resolving technical issues
+
+
 """
 )
 
@@ -148,6 +196,3 @@ st.subheader("Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
-
-#Reference: https://www.youtube.com/watch?v=BXAeMICmUSQ
-#Reference: https://www.youtube.com/watch?v=4SO3CUWPYf0

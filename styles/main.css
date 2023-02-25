@@ -16,7 +16,7 @@ a:hover {
 }
 
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 hr {
@@ -31,5 +31,5 @@ footer {
   visibility: hidden;
 }
 header {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
